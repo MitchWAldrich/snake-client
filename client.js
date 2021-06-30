@@ -9,7 +9,8 @@ const connect = function () {
   conn.setEncoding("utf8");
 
   conn.on("connect", () => {
-    console.log('client has connected');
+    console.log('Successfully connected to game server');
+    console.log('Name: MWA');
   });
 
   conn.on("data", (message) => {
